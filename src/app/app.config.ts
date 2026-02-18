@@ -1,0 +1,15 @@
+import { ApplicationConfig, importProvidersFrom, NgModule, provideZoneChangeDetection } from '@angular/core';
+import { provideRouter } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BaseChartDirective  } from 'ng2-charts';
+import { routes } from './app.routes';
+
+
+export const appConfig: ApplicationConfig = {
+  providers: [
+    provideZoneChangeDetection({ eventCoalescing: true }),
+    provideRouter(routes),
+    BrowserAnimationsModule,
+    importProvidersFrom(BaseChartDirective ),
+  ],
+};  
