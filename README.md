@@ -1,27 +1,69 @@
-# DashboardProject
+# Dashboard Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+This repository contains an Angular dashboard application.
 
-## Development server
+## Clone the repository
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Replace `<repo-url>` with the GitHub repository URL for this project and run:
 
-## Code scaffolding
+```bash
+git clone <repo-url>
+cd dashboard-project
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Prerequisites
 
-## Build
+- Node.js (recommended: >= 18)
+- npm (comes with Node.js) or `pnpm`/`yarn` if you prefer
+- Git
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Install dependencies
 
-## Running unit tests
+From the project root run:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+npm install
+```
 
-## Running end-to-end tests
+Or, if you use Yarn:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+yarn install
+```
 
-## Further help
+## Run the development server
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Start the app locally (the script uses the Angular dev server):
+
+```bash
+npm start
+```
+
+Or run the Angular CLI directly:
+
+```bash
+npx ng serve --open
+```
+
+The app will be available at http://localhost:4200/ and will reload on source changes.
+
+## Build for production
+
+```bash
+npm run build
+```
+
+## Tests
+
+Run unit tests:
+
+```bash
+npm test
+```
+
+## Notes
+
+- If the repository uses a different folder name after cloning, replace `dashboard-project` with the actual folder name created by `git clone`.
+- If you need a specific Node.js version, consider using `nvm` or `nvm-windows` to manage versions.
+
+If you want, I can also add a short CONTRIBUTING section or update package scripts—tell me which you'd prefer.
